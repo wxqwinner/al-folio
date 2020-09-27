@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
+title: <strong>Shacon</strong> Wang
 description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
