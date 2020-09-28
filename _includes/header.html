@@ -3,7 +3,7 @@
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
     <div class="container">
-      {% if page.title != "about" %}
+      {% if page.title != "关于" %}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
        {% if site.title == blank %}{{ site.title }}{% else %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %}
       </a>
@@ -22,21 +22,21 @@
       </button>
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          <!-- About -->
-          <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
+          <!-- 关于 -->
+          <li class="nav-item {% if page.title == '关于' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              about
-              {% if page.title == "about" %}
+              关于
+              {% if page.title == "关于" %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
           </li>
           {% if site.blog_name %}
-          <!-- Blog -->
+          <!-- 博客 -->
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
             <a class="nav-link" href="{{ '/blog/' | relative_url }}">
-              blog
-              {% if page.title == "blog" %}
+                博客
+              {% if page.title == "博客" %}
               <span class="sr-only">(current)</span>
               {% endif %}
             </a>
